@@ -1,0 +1,19 @@
+{{ define "body" }}
+    <body class="{{ if .Site.Params.backgroundImage }} background-image" style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
+{{ end }}
+
+{{ define "main" }}
+    <main aria-role="main">
+
+<div class= "content">
+<div class = "flex-container"> 
+            <h1> <p id= "the"> {{ "the" }} </p> <p id= "wall"> {{ "wall" }} </p> <p id= "street"> {{ "street" }} </p> {{ "shuffle" }} </h1> 
+            <h2> {{ "An Introduction to the"}} <br> {{ "Foundations of Mathematics" }} <br> {{ "in Finance"}} </h2>
+</div>
+            
+        </div>
+        <div class= "post">
+        <h2 id= "Intro" > {{ "Introduction" }} </h2>
+        <div class= "post-content">{{ "So you saw 'The Wolf of Wall Street' or 'The Big Short', read about the GME Squeeze or Crypto and thought to yourself: 'Hey, I could do that.' As it turns out you would not be alone. Since the impact of the pandemic in the beginning of 2020 the financial markets are experiencing an incredible influx of new investors and liquidity. It seems as if it is the perfect market environment to join the stock frenzy. To be able to trade succesfully in modern financial markets it is essential however to understand the products traded, their pricing as well as the risks associated with certain instruments. This website seeks to teach the basics of Finance both with Mathematical theory and computational praxis. It is intended for Mathematics or Physics students not familiar with Finance but comfortable programming. All code is written in the language 'R' but can easily be adapted to Python or the programming language of your choice." }} </div> </div>
+    </main>
+{{ end }}
